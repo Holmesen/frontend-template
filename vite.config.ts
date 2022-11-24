@@ -28,5 +28,16 @@ export default defineConfig({
     sourcemap: false, // 构建后是否生成 source-map 文件
     chunkSizeWarningLimit: 2000, // chunk 大小警告的限制（以 kbs 为单位）
     reportCompressedSize: false, // 启用/禁用 gzip 压缩大小报告
-  }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          hack: `true; @import (reference) "${resolve('src/style/variables.less')}"`,
+        },
+        math: 'strict',
+        javascriptEnabled: true,
+      },
+    },
+  },
 })

@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <HelloWorld />
+  <HelloWorld class="hello-world" />
 </template>
 
 <script lang='ts' setup>
@@ -20,5 +20,7 @@ function apiTest() {
 }
 </script>
 <style scoped lang='less'>
-
+.hello-world {
+  color: @color-red;
+}
 </style>
