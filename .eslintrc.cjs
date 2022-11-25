@@ -1,22 +1,20 @@
-const { defineConfig } = require('eslint-define-config')
-
 module.exports = {
   root: true,
   env: {
     browser: true,
     node: true,
     jest: true,
-    es6: true
+    es6: true,
   },
-  parser: "vue-eslint-parser", // @typescript-eslint/parser
-  plugins: ["@typescript-eslint", "vue"],
+  parser: 'vue-eslint-parser', // @typescript-eslint/parser
+  plugins: ['vue', '@typescript-eslint'],
   extends: [
     'eslint-config-airbnb-base',
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   rules: {
     // 禁止使用多余的包
