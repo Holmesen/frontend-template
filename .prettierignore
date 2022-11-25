@@ -2,6 +2,7 @@
 .DS_Store
 .idea
 .editorconfig
+.eslintrc.cjs
 pnpm-lock.yaml
 .npmrc
 
