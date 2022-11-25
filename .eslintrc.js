@@ -16,7 +16,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     'plugin:vue/vue3-essential',
     'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   rules: {
     // 禁止使用多余的包
