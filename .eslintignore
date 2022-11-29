@@ -4,8 +4,10 @@ node_modules
 components.d.ts
 auto-imports.d.ts
 vite.config.ts
+*env.d.ts
 *.css
 *.less
 *.sass
 *.scss
 *.cjs
+tests/*

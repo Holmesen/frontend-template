@@ -47,7 +47,7 @@ module.exports = {
     // 不允许值使用供应商前缀
     'value-no-vendor-prefix': null,
     // 要求或禁止在规则之前的空行
-    'rule-empty-line-before': ['always', { ignore: ['after-comment', 'first-nested'] }],
+    // 'rule-empty-line-before': ['always', { ignore: ['after-comment', 'first-nested'] }],
     // 指定字符串使用单引号
     'string-quotes': 'single',
     // 指定@规则名的大小写
