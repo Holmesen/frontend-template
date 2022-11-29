@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-    }
+    },
   },
   server: {
     port: 3008, // 服务端口号
@@ -19,9 +19,9 @@ export default defineConfig({
       '/api': {
         target: 'http://www.holmesen.site',
         changeOrigin: true,
-        rewrite: path => path.replace('/api', '')
-      }
-    }
+        rewrite: (path) => path.replace('/api', ''),
+      },
+    },
   },
   build: {
     target: 'es2015', // 最终构建的浏览器兼容目标

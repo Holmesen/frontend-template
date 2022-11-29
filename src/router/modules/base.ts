@@ -1,11 +1,11 @@
-import { RouteRecordRaw } from "vue-router";
+import { RouteRecordRaw } from 'vue-router'
 
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/home',
     name: 'home',
-    component: () => import('@/views/Home/Home.vue'),
-  }
+    component: async () => await import('@/views/home/home.vue'),
+  },
 ]
 
-export default routes;
+export default routes

@@ -1,15 +1,18 @@
-import { post } from "@/utils/request";
+import { post } from '@/utils/request'
 
 export default class Base {
-
   public static get baseUri(): string {
-    return '/base';
+    return '/base'
   }
 
-  static async login(username: string, password: string) {
-    return post(`${this.baseUri}/login`, {
+  static async login(username: string, password: string): Promise<any> {
+    return await post(`${this.baseUri}/login`, {
       username,
-      password
-    });
+      password,
+    })
+  }
+
+  test(): void {
+    console.log('test')
   }
 }

@@ -13,6 +13,7 @@ pnpm-lock.yaml
 *.png
 *.ico
 *ignore
+*.cjs
 
 ## Local
 .husky

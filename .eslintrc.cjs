@@ -1,22 +1,30 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
+    es2021: true,
     node: true,
-    jest: true,
-    es6: true,
+    jest: true
   },
-  parser: 'vue-eslint-parser', // @typescript-eslint/parser
-  plugins: ['vue', '@typescript-eslint'],
   extends: [
-    'eslint-config-airbnb-base',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-essential',
-    'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended',
+    'standard-with-typescript',
+    'plugin:prettier/recommended'
+  ],
+  overrides: [
+  ],
+  parserOptions: {
+    project: 'tsconfig.json',
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    extraFileExtensions: ['.vue']
+  },
+  plugins: [
+    'vue',
+    '@typescript-eslint'
   ],
   rules: {
+    'vue/multi-word-component-names': 'off',
     // 禁止使用多余的包
     'import/no-extraneous-dependencies': 0,
     // 确保在导入路径内一致使用文件扩展名
@@ -80,6 +88,6 @@ module.exports = {
     // 强制箭头函数的箭头前后使用一致的空格
     'arrow-spacing': 'error',
     // 只强制对象解构，不强制数组解构
-    'prefer-destructuring': ['error', { object: true, array: false }],
-  },
-};
+    'prefer-destructuring': ['error', { object: true, array: false }]
+  }
+}
