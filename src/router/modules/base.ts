@@ -11,6 +11,11 @@ const routes: RouteRecordRaw[] = [
     name: 'test',
     component: async () => await import('@/views/test/test.vue'),
   },
+  {
+    path: '/test2',
+    name: 'test2',
+    component: async () => await import('@/views/test/test2.vue'),
+  },
 ]
 
 export default routes
