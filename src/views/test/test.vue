@@ -15,3 +15,9 @@ const increment = () => {
   count.value++
 }
 </script>
+
+<style scoped lang="less">
+p {
+  color: @color-orange;
+}
+</style>

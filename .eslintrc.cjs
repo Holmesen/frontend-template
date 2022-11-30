@@ -26,7 +26,11 @@ module.exports = {
   ],
   rules: {
     // 函数名称与括号之间不用空格
-    'space-before-function-paren': ["error", "never"],
+    'space-before-function-paren': ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
     // 关闭eslint检查vue文件名是否为驼峰命名
     'vue/multi-word-component-names': 'off',
     // 禁止使用多余的包
