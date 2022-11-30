@@ -8,7 +8,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     'standard-with-typescript',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     'plugin:jest/recommended'
   ],
   overrides: [
@@ -25,6 +25,8 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    // 函数名称与括号之间不用空格
+    'space-before-function-paren': ["error", "never"],
     // 关闭eslint检查vue文件名是否为驼峰命名
     'vue/multi-word-component-names': 'off',
     // 禁止使用多余的包
